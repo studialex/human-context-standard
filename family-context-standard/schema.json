@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Copyright (c) 2026 Oleksiy Marchenko. Licensed under the Apache License, Version 2.0",
+  "title": "Family Context Standard (FCS) - Core Schema",
+  "version": "0.1.0",
+  "description": "Zero-Data Retention basic schema for routing patient and caregiver context. Copyright (c) 2026 Oleksiy Marchenko. Licensed under the Apache License, Version 2.0.",
+  "type": "object",
+  "properties": {
+    "patient_id": {
+      "type": "string",
+      "description": "Unique identifier of the primary patient (e.g., UUID)."
+    },
+    "relative_id": {
+      "type": "string",
+      "description": "Unique identifier of the caregiver or partner involved in the Partner Loop."
+    },
+    "anxiety_level_lastmeter": {
+      "type": "integer",
+      "description": "Distress or anxiety level measured via the Lastmeter scale (0-10). Used to trigger the Caregiver Loop.",
+      "minimum": 0,
+      "maximum": 10
+    }
+  },
+  "required": [
+    "patient_id",
+    "relative_id",
+    "anxiety_level_lastmeter"
+  ],
+  "additionalProperties": false
+}
