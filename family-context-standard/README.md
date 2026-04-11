@@ -22,8 +22,6 @@ Modern AI systems treat users as isolated nodes. However, human well-being—esp
 * FCS acts as the parent container for the [**Child Context Standard™ (CCS)**](https://www.google.com/search?q=../child-context-standard/README.md).  
 * Connects natively with medical standards like **HL7 FHIR** (FamilyMemberHistory resources) and genealogical standards (Graph-adapted GEDCOM).
 
-## ***Hackathon Note (BrabantHack\_26): This v0.1 draft is being conceptually validated at BrabantHack\_26 (IKNL Track), demonstrating how a unified family context can securely route oncology rehabilitation guidelines to caregivers.***
-
 ## **License, Copyright & Trademark**
 
 To ensure the standard remains a public good while protecting its integrity, this project operates under a split-licensing and trademark model:
