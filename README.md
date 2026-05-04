@@ -22,6 +22,7 @@ HCS acts as the umbrella protocol. For highly specific social structures, HCS is
 
 * 📂 [**Family Context Standard™ (FCS)**](https://www.google.com/search?q=./family-context-standard/README.md): Extends HCS for multi-person relationship graphs and ReBAC (Relationship-Based Access Control).  
 * 📂 [**Child Context Standard™ (CCS)**](https://www.google.com/search?q=./child-context-standard/README.md): Extends FCS for pediatric development, proxy-consent, and COPPA/GDPR-K compliance.
+* 📂 **[Enterprise Context Standard™ (ECS)](./enterprise-context-standard/README.md)**: Adapts HCS principles for B2B environments, ERP integrations (e.g., Odoo), and stateless corporate AI workflows.
 
 ## **Target Use Cases**
 

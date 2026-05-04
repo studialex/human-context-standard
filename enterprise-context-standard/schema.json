@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$comment": "Copyright (c) 2026 Oleksiy Marchenko. Licensed under the Apache License, Version 2.0",
+  "title": "Enterprise Context Standard (ECS) - MCP Routing Schema",
+  "version": "0.1.0",
+  "description": "Zero-Data Retention schema for routing corporate context and validating ERP permissions. Copyright (c) 2026 Oleksiy Marchenko. Licensed under the Apache License, Version 2.0.",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "description": "Unique identifier of the employee initiating the AI request."
+    },
+    "erp_system": {
+      "type": "string",
+      "description": "Target enterprise system (e.g., 'Odoo', 'Salesforce', 'SAP', 'HEMS', 'Custom').",
+      "enum": ["Odoo", "Salesforce", "SAP", "HEMS", "Custom"]
+    },
+    "required_permission_role": {
+      "type": "string",
+      "description": "The ReBAC/RBAC role required to execute the requested action (e.g., 'Inventory_Manager'). Verified by the MCP Gateway."
+    },
+    "ephemeral_task_scope": {
+      "type": "string",
+      "description": "A strictly bounded description of the task for the stateless Runner agent. Prevents context bloat and hallucination."
+    }
+  },
+  "required": [
+    "employee_id",
+    "erp_system",
+    "required_permission_role",
+    "ephemeral_task_scope"
+  ],
+  "additionalProperties": false
+}
